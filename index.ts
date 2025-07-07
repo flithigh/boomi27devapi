@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 8080;
 
 app.get('/apivistion', (req, res) => {
   res.send('API Version 1.0');
@@ -12,5 +12,5 @@ app.get('/appname', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
